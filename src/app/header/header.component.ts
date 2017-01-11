@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    this.navItems=["Home","About","Location","Contact"];
+  }
 
   ngOnInit() {
   }
-
+navItems:Array<String>;
 }
